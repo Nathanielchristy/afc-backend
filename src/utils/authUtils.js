@@ -62,11 +62,12 @@ const createSession = async (user, req, maxAge = REFRESH_TOKEN_MAX_AGE) => {
 
 const setAdminAuthCookies = (res, accessToken, rawRefreshToken) => {
     const isProduction = process.env.NODE_ENV === "production";
+    const sameSite = isProduction ? "none" : "lax";
 
     res.cookie(ACCESS_COOKIE, accessToken, {
         httpOnly: true,
         secure: isProduction,
-        sameSite: "lax",
+        sameSite,
         maxAge: ACCESS_TOKEN_MAX_AGE,
         path: "/"
     });
@@ -75,7 +76,7 @@ const setAdminAuthCookies = (res, accessToken, rawRefreshToken) => {
         res.cookie(REFRESH_COOKIE, rawRefreshToken, {
             httpOnly: true,
             secure: isProduction,
-            sameSite: "lax",
+            sameSite,
             maxAge: ADMIN_REFRESH_TOKEN_MAX_AGE,
             path: "/api/auth"
         });
@@ -85,7 +86,7 @@ const setAdminAuthCookies = (res, accessToken, rawRefreshToken) => {
     res.cookie(CSRF_COOKIE, csrfToken, {
         httpOnly: false,
         secure: isProduction,
-        sameSite: "lax",
+        sameSite,
         maxAge: ADMIN_REFRESH_TOKEN_MAX_AGE,
         path: "/"
     });
@@ -95,12 +96,13 @@ const setAdminAuthCookies = (res, accessToken, rawRefreshToken) => {
 
 const setAuthCookies = (res, accessToken, rawRefreshToken) => {
     const isProduction = process.env.NODE_ENV === "production";
+    const sameSite = isProduction ? "none" : "lax";
 
     // Access Token cookie
     res.cookie("access_token", accessToken, {
         httpOnly: true,
         secure: isProduction,
-        sameSite: "lax",
+        sameSite,
         maxAge: ACCESS_TOKEN_MAX_AGE,
         path: "/"
     });
@@ -110,7 +112,7 @@ const setAuthCookies = (res, accessToken, rawRefreshToken) => {
         res.cookie("refresh_token", rawRefreshToken, {
             httpOnly: true,
             secure: isProduction,
-            sameSite: "lax",
+            sameSite,
             maxAge: REFRESH_TOKEN_MAX_AGE,
             path: "/api/auth"
         });
@@ -121,7 +123,7 @@ const setAuthCookies = (res, accessToken, rawRefreshToken) => {
     res.cookie("XSRF-TOKEN", csrfToken, {
         httpOnly: false,
         secure: isProduction,
-        sameSite: "lax",
+        sameSite,
         maxAge: REFRESH_TOKEN_MAX_AGE,
         path: "/"
     });
@@ -131,10 +133,11 @@ const setAuthCookies = (res, accessToken, rawRefreshToken) => {
 
 const clearAuthCookies = (res) => {
     const isProduction = process.env.NODE_ENV === "production";
+    const sameSite = isProduction ? "none" : "lax";
     const clearOptions = {
         httpOnly: true,
         secure: isProduction,
-        sameSite: "lax",
+        sameSite,
         expires: new Date(0),
         maxAge: 0
     };
@@ -146,12 +149,13 @@ const clearAuthCookies = (res) => {
 
 const setKitchenAuthCookies = (res, accessToken, rawRefreshToken) => {
     const isProduction = process.env.NODE_ENV === "production";
+    const sameSite = isProduction ? "none" : "lax";
 
     // Kitchen Access Token cookie
     res.cookie(KITCHEN_ACCESS_COOKIE, accessToken, {
         httpOnly: true,
         secure: isProduction,
-        sameSite: "lax",
+        sameSite,
         maxAge: ACCESS_TOKEN_MAX_AGE,
         path: "/"
     });
@@ -161,7 +165,7 @@ const setKitchenAuthCookies = (res, accessToken, rawRefreshToken) => {
         res.cookie(KITCHEN_REFRESH_COOKIE, rawRefreshToken, {
             httpOnly: true,
             secure: isProduction,
-            sameSite: "lax",
+            sameSite,
             maxAge: ADMIN_REFRESH_TOKEN_MAX_AGE,
             path: "/api/auth"
         });
@@ -172,7 +176,7 @@ const setKitchenAuthCookies = (res, accessToken, rawRefreshToken) => {
     res.cookie(CSRF_COOKIE, csrfToken, {
         httpOnly: false,
         secure: isProduction,
-        sameSite: "lax",
+        sameSite,
         maxAge: ADMIN_REFRESH_TOKEN_MAX_AGE,
         path: "/"
     });
@@ -182,10 +186,11 @@ const setKitchenAuthCookies = (res, accessToken, rawRefreshToken) => {
 
 const clearKitchenAuthCookies = (res) => {
     const isProduction = process.env.NODE_ENV === "production";
+    const sameSite = isProduction ? "none" : "lax";
     const clearOptions = {
         httpOnly: true,
         secure: isProduction,
-        sameSite: "lax",
+        sameSite,
         expires: new Date(0),
         maxAge: 0
     };
