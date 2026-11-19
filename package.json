@@ -1,0 +1,36 @@
+{
+  "name": "ecom",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Nathaniel Christy",
+  "type": "commonjs",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node src/seeds/menuSeed.js",
+    "create-admin": "node src/scripts/createAdmin.js",
+    "create-kitchen": "node src/scripts/createKitchenStaff.js",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.4",
+    "multer": "^2.4.0",
+    "nodemailer": "^10.1.1",
+    "sib-api-v3-sdk": "^8.5.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

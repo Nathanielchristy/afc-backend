@@ -1,0 +1,766 @@
+{
+  "restaurant": "American Fried Chicken",
+  "currency": "INR",
+  "categories": [
+    {
+      "name": "Campus Menu",
+      "items": [
+        {
+          "name": "AFC Campus Choice",
+          "price": 249,
+          "includes": [
+            "Crispy Burger",
+            "1 PC Chicken",
+            "French Fries",
+            "Ketchup"
+          ]
+        },
+        {
+          "name": "Besties Meal",
+          "price": 499,
+          "includes": [
+            "Crispy Burger",
+            "1 PC Chicken",
+            "6 Strip PC",
+            "French Fries",
+            "Ketchup"
+          ]
+        },
+        {
+          "name": "Darling Meal",
+          "price": 229,
+          "includes": [
+            "2 PC Chicken",
+            "Bun 2 PC",
+            "French Fries",
+            "Ketchup",
+            "Garlic Paste"
+          ]
+        },
+        {
+          "name": "Campus Dinner Meal",
+          "price": 389,
+          "includes": [
+            "4 PC Chicken",
+            "French Fries",
+            "Garlic Paste",
+            "2 Bun",
+            "Ketchup"
+          ]
+        },
+        {
+          "name": "Campus Crunch",
+          "price": 110,
+          "includes": [
+            "1 PC Chicken",
+            "2 Bun",
+            "French Fries",
+            "Ketchup"
+          ]
+        },
+        {
+          "name": "Dinner Special Meal",
+          "price": 549,
+          "includes": [
+            "6 PC Chicken",
+            "3 Bun",
+            "French Fries",
+            "Garlic Paste",
+            "Ketchup"
+          ]
+        },
+        {
+          "name": "Campus Gang Meal",
+          "price": 1099,
+          "includes": [
+            "14 PC Chicken",
+            "French Fries",
+            "5 Bun",
+            "Garlic Paste",
+            "Ketchup"
+          ]
+        },
+        {
+          "name": "Campus Gang Meal (Mini)",
+          "price": 899,
+          "includes": [
+            "12 PC Chicken",
+            "French Fries",
+            "5 Bun",
+            "Garlic Paste",
+            "Ketchup"
+          ]
+        },
+        {
+          "name": "Campus Family Meal",
+          "price": 699,
+          "includes": [
+            "8 PC Chicken",
+            "French Fries",
+            "4 Bun",
+            "Garlic Paste",
+            "Ketchup"
+          ]
+        },
+        {
+          "name": "Campus Family Meal Mini",
+          "price": 799,
+          "includes": [
+            "10 PC Chicken",
+            "French Fries",
+            "4 Bun",
+            "Garlic Paste",
+            "Ketchup"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mojito",
+      "items": [
+        {
+          "name": "Mint Mojito",
+          "price": 80
+        },
+        {
+          "name": "Blue Mint Mojito",
+          "price": 80
+        },
+        {
+          "name": "Passion Fruit Mojito",
+          "price": 80
+        },
+        {
+          "name": "Green Apple Mojito",
+          "price": 80
+        }
+      ]
+    },
+    {
+      "name": "Pizza",
+      "items": [
+        {
+          "name": "Tandoori Veg",
+          "sizes": {
+            "S": 269,
+            "M": 385,
+            "L": 490
+          },
+          "ingredients": [
+            "Paneer",
+            "Onion",
+            "Capsicum",
+            "Tomato",
+            "Sauce",
+            "Cheese"
+          ]
+        },
+        {
+          "name": "Margherita",
+          "sizes": {
+            "S": 199,
+            "M": 285,
+            "L": 389
+          },
+          "ingredients": [
+            "Cheese",
+            "Sauce"
+          ]
+        },
+        {
+          "name": "BBQ Chicken",
+          "sizes": {
+            "S": 290,
+            "M": 390,
+            "L": 498
+          },
+          "ingredients": [
+            "BBQ Chicken",
+            "Onion",
+            "Capsicum",
+            "Sauce",
+            "Cheese"
+          ]
+        },
+        {
+          "name": "Neapolitan",
+          "sizes": {
+            "S": 258,
+            "M": 387,
+            "L": 480
+          },
+          "ingredients": [
+            "Capsicum",
+            "Black Olives",
+            "Baby Corn",
+            "Sauce",
+            "Cheese"
+          ]
+        },
+        {
+          "name": "Crispy Chicken",
+          "sizes": {
+            "S": 270,
+            "M": 360,
+            "L": 460
+          },
+          "ingredients": [
+            "BBQ Chicken",
+            "Onion",
+            "Capsicum",
+            "Sauce",
+            "Cheese"
+          ]
+        },
+        {
+          "name": "Farm Topping",
+          "sizes": {
+            "S": 259,
+            "M": 388,
+            "L": 489
+          },
+          "ingredients": [
+            "Onion",
+            "Capsicum",
+            "Mushroom",
+            "Tomato",
+            "Sauce",
+            "Cheese"
+          ]
+        },
+        {
+          "name": "Tandoori Chicken",
+          "sizes": {
+            "S": 280,
+            "M": 380,
+            "L": 480
+          },
+          "ingredients": [
+            "BBQ Chicken",
+            "Onion",
+            "Capsicum",
+            "Sauce",
+            "Cheese"
+          ]
+        }
+      ],
+      "extra_toppings": [
+        {
+          "name": "Extra Cheese",
+          "price": 69
+        },
+        {
+          "name": "Veg. Toppings",
+          "price": 60
+        },
+        {
+          "name": "Non Veg. Toppings",
+          "price": 80
+        }
+      ]
+    },
+    {
+      "name": "Wraps & Sides",
+      "items": [
+        {
+          "name": "AFC Shawarma",
+          "price": 100
+        },
+        {
+          "name": "AFC Shawarma Meal",
+          "price": 120
+        },
+        {
+          "name": "Veg Wrap",
+          "price": 120
+        },
+        {
+          "name": "Veg Wrap Meal",
+          "price": 148
+        },
+        {
+          "name": "Chicken Wrap",
+          "price": 149
+        },
+        {
+          "name": "Chicken Wrap Meal",
+          "price": 177
+        },
+        {
+          "name": "Chicken Nuggets",
+          "price": 239,
+          "includes": [
+            "12 PC Nuggets",
+            "Pepsi (250ML)",
+            "French Fries"
+          ]
+        },
+        {
+          "name": "French Fries",
+          "price": 69
+        },
+        {
+          "name": "Popy Chick - Small",
+          "price": 99
+        },
+        {
+          "name": "Popy Chick - Large",
+          "price": 129
+        }
+      ]
+    },
+    {
+      "name": "Campus Gang Feast",
+      "items": [
+        {
+          "name": "Campus Gang Feast - 24 Person",
+          "price": 3599,
+          "includes": [
+            "4 Pizza Small (Choice)",
+            "24 Chicken",
+            "24 Chicken Strips",
+            "French Fries",
+            "Ketchup",
+            "Garlic Paste",
+            "1 Liter Soft Drink (Choice)"
+          ],
+          "pizza_choices": [
+            "Tandoori Veg",
+            "Margherita",
+            "BBQ Chicken",
+            "Neapolitan",
+            "Crispy Chicken",
+            "Farm Fresh",
+            "Tandoori Chicken"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Salad",
+      "items": [
+        {
+          "name": "Salad Without Chicken",
+          "price": 149
+        },
+        {
+          "name": "Salad With Chicken",
+          "price": 189
+        },
+        {
+          "name": "Overloaded Fried",
+          "price": 250
+        }
+      ]
+    },
+    {
+      "name": "Grilled Chicken",
+      "items": [
+        {
+          "name": "Full Grilled Chicken",
+          "price": 500
+        },
+        {
+          "name": "Half Grilled Chicken",
+          "price": 299
+        },
+        {
+          "name": "Quarter Grilled Chicken",
+          "price": 169
+        },
+        {
+          "name": "Quarter Chest Grilled Chicken",
+          "price": 199
+        },
+        {
+          "name": "1 PC Chicken",
+          "price": 99
+        },
+        {
+          "name": "Party Box",
+          "price": 90,
+          "minimum_order": 150,
+          "includes": [
+            "1 PC Chicken",
+            "Ketchup",
+            "Bun 1 PC",
+            "Garlic Paste"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Burgers & Combos",
+      "items": [
+        {
+          "name": "Spicy Crispy Burger Combo",
+          "price": 189
+        },
+        {
+          "name": "Crispy Double Burger Combo",
+          "price": 259
+        },
+        {
+          "name": "Veg Burger Combo",
+          "price": 159
+        },
+        {
+          "name": "Veg Double Burger Combo",
+          "price": 199
+        },
+        {
+          "name": "Crispy Beef Burger Combo",
+          "price": 180
+        },
+        {
+          "name": "Chicken Cheese Burger Combo",
+          "price": 149
+        },
+        {
+          "name": "Kids Burger",
+          "price": 99
+        },
+        {
+          "name": "Kids Pop Burger",
+          "price": 99
+        },
+        {
+          "name": "AFC Crispy Burger Combo",
+          "price": 155
+        },
+        {
+          "name": "Chilli Chicken Burger Combo",
+          "price": 169
+        },
+        {
+          "name": "Chicken Momos Burger Combo",
+          "price": 178
+        },
+        {
+          "name": "Chicken Strip Meal",
+          "price": 485,
+          "includes": [
+            "10 Strip PC",
+            "French Fries",
+            "Garlic Paste",
+            "Ketchup"
+          ]
+        },
+        {
+          "name": "AFC Prawns",
+          "price": 178,
+          "note": "Price may vary according to availability",
+          "sizes": [
+            "1KG",
+            "500G",
+            "250G"
+          ]
+        },
+        {
+          "name": "Strips (6 PC)",
+          "price": 299
+        }
+      ]
+    },
+    {
+      "name": "Combo Add On",
+      "items": [
+        {
+          "price": 89,
+          "includes": [
+            "French Fries",
+            "Pepsi (250ML)",
+            "Ketchup",
+            "Mayonnaise"
+          ]
+        },
+        {
+          "price": 110,
+          "includes": [
+            "Kubhoos",
+            "French Fries",
+            "Mayonnaise",
+            "Choice Drinks (250ML)"
+          ]
+        },
+        {
+          "price": 99,
+          "includes": [
+            "French Fries",
+            "Pepsi (250ML)",
+            "3 Bun",
+            "Mayonnaise"
+          ]
+        },
+        {
+          "price": 137,
+          "includes": [
+            "Pepsi (1.25 LTR)",
+            "French Fries",
+            "6 Bun"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bucket Meal",
+      "items": [
+        {
+          "name": "Jumbo Family Meal",
+          "price": 1549,
+          "includes": [
+            "14 PC Chicken",
+            "French Fries",
+            "5 Bun",
+            "2 Garlic Paste",
+            "Ketchup",
+            "1 Coleslaw"
+          ]
+        },
+        {
+          "name": "Mini Jumbo Family",
+          "price": 1359,
+          "includes": [
+            "12 PC Chicken",
+            "French Fries",
+            "4 Bun",
+            "1 Garlic Paste",
+            "Ketchup",
+            "1 Coleslaw"
+          ]
+        },
+        {
+          "name": "Family Special Meal",
+          "price": 1159,
+          "includes": [
+            "10 PC Chicken",
+            "French Fries",
+            "4 Bun",
+            "1 Garlic Paste",
+            "Ketchup",
+            "1 Coleslaw"
+          ]
+        },
+        {
+          "name": "Small Family Meal",
+          "price": 999,
+          "includes": [
+            "8 PC Chicken",
+            "French Fries",
+            "4 Bun",
+            "1 Garlic Paste",
+            "Ketchup",
+            "1 Coleslaw"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Add On",
+      "items": [
+        {
+          "name": "Bun",
+          "price": 10
+        },
+        {
+          "name": "Mayonnaise",
+          "price": 20
+        },
+        {
+          "name": "Ketchup",
+          "price": 2
+        },
+        {
+          "name": "Garlic Paste",
+          "price": 20
+        },
+        {
+          "name": "Kubhoos",
+          "price": 10
+        },
+        {
+          "name": "Extra Cheese",
+          "price": 20
+        },
+        {
+          "name": "Chicken Piece of Your Choice",
+          "price": 120
+        },
+        {
+          "name": "Pepsi / 7UP / Dew / Mirinda - 750 ML",
+          "price": 40
+        }
+      ],
+      "meal_addons": [
+        {
+          "price": 163,
+          "includes": [
+            "Pepsi (1.25 LTR)",
+            "French Fries",
+            "7 Bun",
+            "Coleslaw"
+          ]
+        },
+        {
+          "price": 149,
+          "includes": [
+            "Pepsi (1.25 LTR)",
+            "French Fries",
+            "5 Bun",
+            "Coleslaw"
+          ]
+        },
+        {
+          "price": 137,
+          "includes": [
+            "Pepsi (750ML)",
+            "French Fries",
+            "6 Bun",
+            "Coleslaw"
+          ]
+        },
+        {
+          "price": 129,
+          "includes": [
+            "Pepsi (750ML)",
+            "French Fries",
+            "Bun",
+            "Coleslaw"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Snacks",
+      "items": [
+        {
+          "name": "Sea Food Spring Roll",
+          "price": 25
+        },
+        {
+          "name": "Fish Finger",
+          "price": 30
+        },
+        {
+          "name": "Fish Cutlet",
+          "price": 13
+        },
+        {
+          "name": "Fish Samosa",
+          "price": 15
+        },
+        {
+          "name": "Chicken Ball",
+          "price": 12
+        },
+        {
+          "name": "Chicken Fillet",
+          "price": 15
+        },
+        {
+          "name": "Chicken Nuggets",
+          "price": 20
+        },
+        {
+          "name": "Chicken Samosa",
+          "price": 15
+        },
+        {
+          "name": "Chicken Spring Roll",
+          "price": 20
+        },
+        {
+          "name": "Chicken Rings",
+          "price": 15
+        },
+        {
+          "name": "Chicken Fingers",
+          "price": 12
+        },
+        {
+          "name": "Chicken Momos",
+          "price": 15
+        },
+        {
+          "name": "Meat Cutlet",
+          "price": 13
+        },
+        {
+          "name": "Meat Momos",
+          "price": 15
+        },
+        {
+          "name": "Meat Samosa",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "name": "Fried Rices",
+      "items": [
+        {
+          "name": "Veg Fried Rice",
+          "price": 169
+        },
+        {
+          "name": "Egg Fried Rice",
+          "price": 189
+        },
+        {
+          "name": "Chicken Fried Rice",
+          "price": 199
+        }
+      ]
+    },
+    {
+      "name": "Noodles",
+      "items": [
+        {
+          "name": "Veg Noodles",
+          "price": 189
+        },
+        {
+          "name": "Egg Noodles",
+          "price": 199
+        },
+        {
+          "name": "Chicken Noodles",
+          "price": 219
+        }
+      ]
+    },
+    {
+      "name": "Ice Creams",
+      "items": [
+        {
+          "name": "Alphonso Mango",
+          "price": 60
+        },
+        {
+          "name": "Strawberry",
+          "price": 60
+        },
+        {
+          "name": "Kulfi",
+          "price": 80
+        },
+        {
+          "name": "Vanilla",
+          "price": 60
+        },
+        {
+          "name": "Chocolate",
+          "price": 70
+        },
+        {
+          "name": "Pista",
+          "price": 70
+        },
+        {
+          "name": "Tender Coconut",
+          "price": 80
+        }
+      ]
+    }
+  ]
+}
