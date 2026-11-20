@@ -42,7 +42,7 @@ const router = express.Router();
 // General auth rate limiter
 const authLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
-    limit: 10,
+    limit: 20,
     standardHeaders: "draft-8",
     legacyHeaders: false,
     skip: () => process.env.NODE_ENV === "test",
@@ -75,6 +75,19 @@ const otpResendLimiter = rateLimit({
     message: {
         success: false,
         message: "Too many OTP requests. Please wait a few minutes before requesting another code."
+    }
+});
+
+// Token refresh limiter (separate from login — refresh is a normal background operation)
+const refreshLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    limit: 60,
+    standardHeaders: "draft-8",
+    legacyHeaders: false,
+    skip: () => process.env.NODE_ENV === "test",
+    message: {
+        success: false,
+        message: "Too many refresh attempts. Please try again later."
     }
 });
 
@@ -190,7 +203,7 @@ router.post(
 
 router.post(
     "/refresh",
-    authLimiter,
+    refreshLimiter,
     refreshToken
 );
 
@@ -211,10 +224,11 @@ router.get("/csrf", (req, res) => {
     if (!csrfToken) {
         csrfToken = crypto.randomBytes(32).toString("hex");
         const isProduction = process.env.NODE_ENV === "production";
+        const sameSite = isProduction ? "none" : "lax";
         res.cookie("XSRF-TOKEN", csrfToken, {
             httpOnly: false,
             secure: isProduction,
-            sameSite: "lax",
+            sameSite,
             maxAge: 7 * 24 * 60 * 60 * 1000,
             path: "/"
         });
